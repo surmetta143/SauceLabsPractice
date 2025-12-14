@@ -8,12 +8,8 @@ from selenium.webdriver.chrome.options import Options
 
 
 
-def test_login():
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(options=options)
+def test_login(open_chrome):
+    driver = open_chrome
     driver.get("https://testautomationpractice.blogspot.com/")
     time.sleep(5)
     driver.maximize_window()
