@@ -9,7 +9,7 @@ import pytest
 
 
 @pytest.mark.regression
-def test_saritha(open_chrome):
+def test_swati(open_chrome):
     driver = open_chrome
 
     driver.get("https://testautomationpractice.blogspot.com/")
@@ -21,8 +21,9 @@ def test_saritha(open_chrome):
     driver.close()
 
 
-@pytest.mark.suresh
-def test_login_bhavitha(open_chrome):
+
+@pytest.mark.smoke
+def test_login_rohit(open_chrome):
     driver = open_chrome
     driver.get("https://testautomationpractice.blogspot.com/")
     time.sleep(5)
@@ -33,9 +34,8 @@ def test_login_bhavitha(open_chrome):
     driver.close()
 
 
-
-@pytest.mark.sanity
-def test_login_surekha(open_chrome):
+@pytest.mark.smoke
+def test_login_yaswanth(open_chrome):
     driver = open_chrome
     driver.get("https://testautomationpractice.blogspot.com/")
     time.sleep(5)
